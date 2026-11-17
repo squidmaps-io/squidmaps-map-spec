@@ -1,0 +1,1 @@
+# The squidmaps map spec
