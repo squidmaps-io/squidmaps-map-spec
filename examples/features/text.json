@@ -1,0 +1,96 @@
+{
+  "name": "Text",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.95992,
+      40.77348,
+      -73.95108,
+      40.77552
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "text-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9589,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@feature-type": "text",
+        "name": "Plain"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "text-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9555,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@feature-type": "text",
+        "name": "With a\nbackground",
+        "@text-size": 16,
+        "@text-color": "#FFFFFF",
+        "@text-halo-width": 0,
+        "@text-background": "#1E7A6C",
+        "@text-callout": [
+          -73.9555,
+          40.7739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "text-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9521,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@feature-type": "text",
+        "name": "Turned",
+        "@text-size": 20,
+        "@text-color": "#C2473A",
+        "@text-rotate": -20,
+        "@text-scale": "map",
+        "@text-scale-zoom": 16
+      }
+    }
+  ]
+}

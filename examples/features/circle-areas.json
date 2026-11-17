@@ -1,0 +1,55 @@
+{
+  "name": "Circle areas",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.9594,
+      40.7706,
+      -73.9516,
+      40.7784
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "circle-area",
+      "geometry": null,
+      "properties": {
+        "name": "A 150 m walk",
+        "@feature-type": "circle",
+        "@circle": {
+          "center": [
+            -73.9555,
+            40.7745
+          ],
+          "radius": 150
+        },
+        "@fill-color": "#F2C14E"
+      }
+    }
+  ]
+}

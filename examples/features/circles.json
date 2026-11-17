@@ -1,0 +1,101 @@
+{
+  "name": "Circles",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96018,
+      40.77342,
+      -73.95082,
+      40.77558
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "circle-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9591,
+          40.7745
+        ]
+      },
+      "properties": {}
+    },
+    {
+      "type": "Feature",
+      "id": "circle-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9567,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@fill": "#D9664E",
+        "@radius": 13,
+        "@icon": "solid/mug-hot"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circle-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9543,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@fill": "#12312C",
+        "@radius": 5,
+        "@stroke": "#F2C14E",
+        "@stroke-width": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "circle-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9519,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@fill": "#F2C14E",
+        "@radius": 18,
+        "@stroke-width": 0,
+        "@icon": "solid/star",
+        "@icon-color": "#8A3B12"
+      }
+    }
+  ]
+}

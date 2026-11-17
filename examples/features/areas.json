@@ -1,0 +1,147 @@
+{
+  "name": "Areas",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96031,
+      40.77271,
+      -73.95069,
+      40.77629
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "area-1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9592,
+              40.773816
+            ],
+            [
+              -73.9574,
+              40.773816
+            ],
+            [
+              -73.9574,
+              40.775184
+            ],
+            [
+              -73.9592,
+              40.775184
+            ],
+            [
+              -73.9592,
+              40.773816
+            ]
+          ]
+        ]
+      },
+      "properties": {}
+    },
+    {
+      "type": "Feature",
+      "id": "area-2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9564,
+              40.773816
+            ],
+            [
+              -73.9546,
+              40.773816
+            ],
+            [
+              -73.9546,
+              40.775184
+            ],
+            [
+              -73.9564,
+              40.775184
+            ],
+            [
+              -73.9564,
+              40.773816
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@line-color": "#2F8A4E",
+        "@line-width": 1,
+        "@fill-color": "#2F8A4E",
+        "@fill-opacity": 0.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area-3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9536,
+              40.773816
+            ],
+            [
+              -73.9518,
+              40.773816
+            ],
+            [
+              -73.9518,
+              40.775184
+            ],
+            [
+              -73.9536,
+              40.775184
+            ],
+            [
+              -73.9536,
+              40.773816
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@line-color": "#C2473A",
+        "@line-width": 3,
+        "@line-dasharray": [
+          2,
+          2
+        ],
+        "@fill-opacity": 0
+      }
+    }
+  ]
+}

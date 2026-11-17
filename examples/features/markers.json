@@ -1,0 +1,88 @@
+{
+  "name": "Markers",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.95862,
+      40.77378,
+      -73.95238,
+      40.77522
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "marker-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9579,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@point-type": "marker"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "marker-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9555,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@point-type": "marker",
+        "@marker-shell": "#C2473A",
+        "@marker-disc": "#FFFFFF",
+        "@marker-icon": "solid/utensils",
+        "@marker-size": "large"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "marker-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9531,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@point-type": "marker",
+        "@marker-shell": "#12312C",
+        "@marker-disc": "#F2C14E",
+        "@marker-icon": "solid/star",
+        "@marker-icon-color": "#12312C"
+      }
+    }
+  ]
+}

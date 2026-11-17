@@ -1,0 +1,166 @@
+{
+  "name": "Area labels",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96333,
+      40.77107,
+      -73.94747,
+      40.77793
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "area-label-1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9615,
+              40.7731
+            ],
+            [
+              -73.9571,
+              40.7731
+            ],
+            [
+              -73.9571,
+              40.7743
+            ],
+            [
+              -73.9601,
+              40.7743
+            ],
+            [
+              -73.9601,
+              40.7759
+            ],
+            [
+              -73.9615,
+              40.7759
+            ],
+            [
+              -73.9615,
+              40.7731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Playground",
+        "@show-label": true,
+        "@line-color": "#2F8A4E",
+        "@fill-color": "#2F8A4E",
+        "@fill-opacity": 0.25,
+        "@label-color": "#1F5E35"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area-label-2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9561,
+              40.7733
+            ],
+            [
+              -73.9535,
+              40.7733
+            ],
+            [
+              -73.9535,
+              40.7757
+            ],
+            [
+              -73.9561,
+              40.7757
+            ],
+            [
+              -73.9561,
+              40.7733
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "John Jay Park ballfields",
+        "@label-text": "Ballfields",
+        "@show-label": true,
+        "@line-color": "#3F80C4",
+        "@fill-color": "#3F80C4",
+        "@fill-opacity": 0.8,
+        "@label-color": "#FFFFFF",
+        "@label-halo": false,
+        "@label-size": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area-label-3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9525,
+              40.7729
+            ],
+            [
+              -73.9517,
+              40.7729
+            ],
+            [
+              -73.9493,
+              40.7761
+            ],
+            [
+              -73.9501,
+              40.7761
+            ],
+            [
+              -73.9525,
+              40.7729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Esplanade",
+        "@show-label": true,
+        "@line-color": "#E08A2E",
+        "@fill-color": "#E08A2E",
+        "@label-size": 11,
+        "@label-weight": "regular"
+      }
+    }
+  ]
+}

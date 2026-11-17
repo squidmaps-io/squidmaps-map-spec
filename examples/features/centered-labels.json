@@ -1,0 +1,134 @@
+{
+  "name": "Centered labels",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.9609,
+      40.7725,
+      -73.9505,
+      40.7764
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "cluster-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9597,
+          40.7751
+        ]
+      },
+      "properties": {
+        "name": "Carl Schurz Park",
+        "@label-text": 7,
+        "@radius": 13,
+        "@fill": "#3F80C4",
+        "@stroke-width": 3,
+        "@show-label": true,
+        "@label-placement": "center",
+        "@label-size": 10,
+        "@label-weight": "bold",
+        "@label-color": "#FFFFFF",
+        "@label-halo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cluster-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9571,
+          40.7737
+        ]
+      },
+      "properties": {
+        "name": "East 79th Street",
+        "@label-text": 42,
+        "@radius": 18,
+        "@fill": "#E08A2E",
+        "@stroke-width": 3,
+        "@show-label": true,
+        "@label-placement": "center",
+        "@label-size": 14,
+        "@label-weight": "bold",
+        "@label-color": "#FFFFFF",
+        "@label-halo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cluster-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9543,
+          40.7752
+        ]
+      },
+      "properties": {
+        "name": "Lexington Avenue",
+        "@label-text": 186,
+        "@radius": 24,
+        "@fill": "#C2473A",
+        "@stroke-width": 3,
+        "@show-label": true,
+        "@label-placement": "center",
+        "@label-size": 18,
+        "@label-weight": "black",
+        "@label-color": "#FFFFFF",
+        "@label-halo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cluster-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9517,
+          40.774
+        ]
+      },
+      "properties": {
+        "name": "York Avenue",
+        "@label-text": 23,
+        "@radius": 16,
+        "@fill": "#E08A2E",
+        "@stroke-width": 3,
+        "@show-label": true,
+        "@label-placement": "center",
+        "@label-size": 12,
+        "@label-weight": "bold",
+        "@label-color": "#FFFFFF",
+        "@label-halo": false
+      }
+    }
+  ]
+}

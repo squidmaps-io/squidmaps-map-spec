@@ -1,0 +1,75 @@
+{
+  "name": "Rectangles",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96265,
+      40.76985,
+      -73.94835,
+      40.77915
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "rectangle",
+      "geometry": null,
+      "properties": {
+        "name": "A lot",
+        "@feature-type": "rectangle",
+        "@rectangle": {
+          "center": [
+            -73.958,
+            40.7745
+          ],
+          "width": 320,
+          "height": 140,
+          "rotation": 29
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rounded-rectangle",
+      "geometry": null,
+      "properties": {
+        "name": "A plaza",
+        "@feature-type": "rectangle",
+        "@rectangle": {
+          "center": [
+            -73.953,
+            40.7745
+          ],
+          "width": 240,
+          "height": 160,
+          "rotation": 29,
+          "cornerRadius": 40
+        }
+      }
+    }
+  ]
+}

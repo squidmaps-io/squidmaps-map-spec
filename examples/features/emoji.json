@@ -1,0 +1,86 @@
+{
+  "name": "Emoji",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.95862,
+      40.77378,
+      -73.95238,
+      40.77522
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "emoji-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9579,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@point-type": "emoji",
+        "@emoji": "🍕",
+        "@size": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "emoji-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9555,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@point-type": "emoji",
+        "@emoji": "🚲",
+        "@size": 32
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "emoji-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9531,
+          40.7745
+        ]
+      },
+      "properties": {
+        "@point-type": "emoji",
+        "@emoji": "🏛️",
+        "@size": 48
+      }
+    }
+  ]
+}

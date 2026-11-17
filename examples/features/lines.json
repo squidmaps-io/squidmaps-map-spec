@@ -1,0 +1,164 @@
+{
+  "name": "Lines",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96135,
+      40.7716,
+      -73.94965,
+      40.7774
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "line-1",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.96,
+            40.77565
+          ],
+          [
+            -73.957,
+            40.77605
+          ],
+          [
+            -73.954,
+            40.77565
+          ],
+          [
+            -73.951,
+            40.77605
+          ]
+        ]
+      },
+      "properties": {
+        "@line-color": "#3F80C4",
+        "@line-width": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "line-2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.96,
+            40.77475
+          ],
+          [
+            -73.957,
+            40.77515
+          ],
+          [
+            -73.954,
+            40.77475
+          ],
+          [
+            -73.951,
+            40.77515
+          ]
+        ]
+      },
+      "properties": {
+        "@line-color": "#C2473A",
+        "@line-width": 3,
+        "@line-dasharray": [
+          4,
+          2
+        ],
+        "@line-cap": "butt"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "line-3",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.96,
+            40.77385
+          ],
+          [
+            -73.957,
+            40.77425
+          ],
+          [
+            -73.954,
+            40.77385
+          ],
+          [
+            -73.951,
+            40.77425
+          ]
+        ]
+      },
+      "properties": {
+        "@line-color": "#12312C",
+        "@line-width": 4,
+        "@line-dasharray": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "line-4",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.96,
+            40.77295
+          ],
+          [
+            -73.957,
+            40.77335
+          ],
+          [
+            -73.954,
+            40.77295
+          ],
+          [
+            -73.951,
+            40.77335
+          ]
+        ]
+      },
+      "properties": {
+        "@line-color": "#2F8A4E",
+        "@line-width": 10,
+        "@line-opacity": 0.5
+      }
+    }
+  ]
+}

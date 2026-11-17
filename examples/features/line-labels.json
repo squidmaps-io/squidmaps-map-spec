@@ -1,0 +1,251 @@
+{
+  "name": "Line labels",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.9633,
+      40.7715,
+      -73.9477,
+      40.7775
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "curve-1",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9615,
+            40.7754
+          ],
+          [
+            -73.9605,
+            40.77555
+          ],
+          [
+            -73.9595,
+            40.77566
+          ],
+          [
+            -73.9585,
+            40.7757
+          ],
+          [
+            -73.9575,
+            40.77566
+          ],
+          [
+            -73.9565,
+            40.77555
+          ],
+          [
+            -73.9555,
+            40.7754
+          ],
+          [
+            -73.9545,
+            40.77525
+          ],
+          [
+            -73.9535,
+            40.77514
+          ],
+          [
+            -73.9525,
+            40.7751
+          ],
+          [
+            -73.9515,
+            40.77514
+          ],
+          [
+            -73.9505,
+            40.77525
+          ],
+          [
+            -73.9495,
+            40.7754
+          ]
+        ]
+      },
+      "properties": {
+        "name": "East River Greenway",
+        "@show-label": true,
+        "@line-color": "#2F8A4E",
+        "@line-width": 5,
+        "@label-offset": 10,
+        "@label-color": "#1F5E35"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curve-2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9615,
+            40.774752
+          ],
+          [
+            -73.9605,
+            40.7748
+          ],
+          [
+            -73.9595,
+            40.774767
+          ],
+          [
+            -73.9585,
+            40.774662
+          ],
+          [
+            -73.9575,
+            40.774514
+          ],
+          [
+            -73.9565,
+            40.774362
+          ],
+          [
+            -73.9555,
+            40.774248
+          ],
+          [
+            -73.9545,
+            40.7742
+          ],
+          [
+            -73.9535,
+            40.774233
+          ],
+          [
+            -73.9525,
+            40.774338
+          ],
+          [
+            -73.9515,
+            40.774486
+          ],
+          [
+            -73.9505,
+            40.774638
+          ],
+          [
+            -73.9495,
+            40.774752
+          ]
+        ]
+      },
+      "properties": {
+        "name": "M15 Select Bus Service",
+        "@label-text": "M15",
+        "@show-label": true,
+        "@line-color": "#3F80C4",
+        "@line-width": 4,
+        "@label-color": "#3F80C4",
+        "@label-size": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curve-3",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9615,
+            40.773873
+          ],
+          [
+            -73.9605,
+            40.773774
+          ],
+          [
+            -73.9595,
+            40.773628
+          ],
+          [
+            -73.9585,
+            40.773475
+          ],
+          [
+            -73.9575,
+            40.773355
+          ],
+          [
+            -73.9565,
+            40.773301
+          ],
+          [
+            -73.9555,
+            40.773327
+          ],
+          [
+            -73.9545,
+            40.773426
+          ],
+          [
+            -73.9535,
+            40.773572
+          ],
+          [
+            -73.9525,
+            40.773725
+          ],
+          [
+            -73.9515,
+            40.773845
+          ],
+          [
+            -73.9505,
+            40.773899
+          ],
+          [
+            -73.9495,
+            40.773873
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Proposed bike lane",
+        "@show-label": true,
+        "@line-color": "#C2473A",
+        "@line-width": 3,
+        "@line-dasharray": [
+          2,
+          2
+        ],
+        "@label-color": "#C2473A",
+        "@label-size": 12,
+        "@label-weight": "regular"
+      }
+    }
+  ]
+}

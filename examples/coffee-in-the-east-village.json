@@ -1,0 +1,140 @@
+{
+  "name": "Coffee in the East Village",
+  "description": "Where to get a **good cup**, and a park to drink it in.",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 12,
+      "max": 18
+    },
+    "bounds": [
+      -74.02,
+      40.7,
+      -73.95,
+      40.75
+    ],
+    "initialBounds": [
+      -74,
+      40.715,
+      -73.97,
+      40.74
+    ],
+    "scrollZoom": true
+  },
+  "view": {
+    "center": [
+      -73.985,
+      40.727
+    ],
+    "zoom": 15
+  },
+  "legend": {
+    "title": "Legend",
+    "rows": [
+      {
+        "label": "Cafés",
+        "symbol": {
+          "type": "circle",
+          "fill": "#D9664E",
+          "radius": 10,
+          "stroke": "#FFFFFF",
+          "strokeWidth": 2,
+          "icon": "solid/mug-hot",
+          "iconColor": null
+        }
+      },
+      {
+        "label": "Tompkins Square Park",
+        "symbol": {
+          "type": "area",
+          "color": "#2F8A4E",
+          "width": 2,
+          "opacity": 1,
+          "dasharray": [],
+          "cap": "round",
+          "fillColor": "#2F8A4E",
+          "fillOpacity": 0.3
+        }
+      }
+    ]
+  },
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "abraco",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986645,
+          40.726721
+        ]
+      },
+      "properties": {
+        "name": "Abraço",
+        "description": "Tiny, standing room only. Get the olive oil cake.",
+        "@folder": "Cafés",
+        "@point-type": "circle",
+        "@fill": "#D9664E",
+        "@radius": 10,
+        "@icon": "solid/mug-hot",
+        "@show-label": true,
+        "@tooltip": true,
+        "@popup": "card",
+        "@directions": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tompkins",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.982288,
+              40.727809
+            ],
+            [
+              -73.979992,
+              40.726849
+            ],
+            [
+              -73.981247,
+              40.725085
+            ],
+            [
+              -73.983543,
+              40.726028
+            ],
+            [
+              -73.982288,
+              40.727809
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Tompkins Square Park",
+        "@line-color": "#2F8A4E",
+        "@fill-color": "#2F8A4E",
+        "@fill-opacity": 0.3,
+        "@popup": "panel"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Panel",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.964,
+      40.7729,
+      -73.9533,
+      40.7761
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "park",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9555,
+          40.7745
+        ]
+      },
+      "properties": {
+        "name": "Carl Schurz Park",
+        "description": "A hilly park on the East River, with a promenade over the water.\n\n- Dog runs for big and small dogs\n- Benches along the river, in the shade\n- Gracie Mansion, the mayor's residence, at the north end",
+        "@images": [
+          {
+            "id": "6f1d2c1e-3b0a-4c55-9a59-1c4c7d0b2a03",
+            "url": "https://squidmaps.io/examples/images/park",
+            "original": "https://squidmaps.io/examples/images/park/large.webp",
+            "width": 2560,
+            "height": 1920,
+            "bytes": 60200
+          }
+        ],
+        "@popup": "panel",
+        "@fill": "#2F8A4E",
+        "@radius": 12,
+        "@icon": "solid/tree"
+      }
+    }
+  ]
+}

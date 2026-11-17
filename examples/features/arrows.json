@@ -1,0 +1,112 @@
+{
+  "name": "Arrows",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96148,
+      40.77262,
+      -73.94952,
+      40.77638
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "arrow-1",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9601,
+            40.774
+          ],
+          [
+            -73.9577,
+            40.775
+          ]
+        ]
+      },
+      "properties": {
+        "@feature-type": "arrow",
+        "@arrow-scale-zoom": 16,
+        "name": "Curved",
+        "@arrow-curve": 0.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrow-2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9567,
+            40.774
+          ],
+          [
+            -73.9543,
+            40.775
+          ]
+        ]
+      },
+      "properties": {
+        "@feature-type": "arrow",
+        "@arrow-scale-zoom": 16,
+        "name": "Straight",
+        "@arrow-color": "#22433E",
+        "@arrow-width": 10,
+        "@arrow-rounding": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arrow-3",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.9533,
+            40.774
+          ],
+          [
+            -73.9509,
+            40.775
+          ]
+        ]
+      },
+      "properties": {
+        "@feature-type": "arrow",
+        "@arrow-scale-zoom": 16,
+        "name": "Bent the other way",
+        "@arrow-color": "#3F80C4",
+        "@arrow-width": 4,
+        "@arrow-rounding": 1,
+        "@arrow-curve": -0.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "name": "Mask",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -77.16,
+      38.78,
+      -76.87,
+      39.01
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "dc",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.039,
+              38.7916
+            ],
+            [
+              -76.9094,
+              38.8929
+            ],
+            [
+              -77.0415,
+              38.9955
+            ],
+            [
+              -77.1198,
+              38.9341
+            ],
+            [
+              -77.1013,
+              38.9187
+            ],
+            [
+              -77.0832,
+              38.905
+            ],
+            [
+              -77.07,
+              38.902
+            ],
+            [
+              -77.056,
+              38.88
+            ],
+            [
+              -77.045,
+              38.87
+            ],
+            [
+              -77.04,
+              38.858
+            ],
+            [
+              -77.038,
+              38.845
+            ],
+            [
+              -77.039,
+              38.82
+            ],
+            [
+              -77.039,
+              38.7916
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Washington, DC",
+        "@line-color": "#12312C",
+        "@fill-opacity": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dc-inverse",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180,
+              -85.051129
+            ],
+            [
+              180,
+              -85.051129
+            ],
+            [
+              180,
+              85.051129
+            ],
+            [
+              -180,
+              85.051129
+            ],
+            [
+              -180,
+              -85.051129
+            ]
+          ],
+          [
+            [
+              -77.039,
+              38.7916
+            ],
+            [
+              -77.039,
+              38.82
+            ],
+            [
+              -77.038,
+              38.845
+            ],
+            [
+              -77.04,
+              38.858
+            ],
+            [
+              -77.045,
+              38.87
+            ],
+            [
+              -77.056,
+              38.88
+            ],
+            [
+              -77.07,
+              38.902
+            ],
+            [
+              -77.0832,
+              38.905
+            ],
+            [
+              -77.1013,
+              38.9187
+            ],
+            [
+              -77.1198,
+              38.9341
+            ],
+            [
+              -77.0415,
+              38.9955
+            ],
+            [
+              -76.9094,
+              38.8929
+            ],
+            [
+              -77.039,
+              38.7916
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Inverse of Washington, DC",
+        "@fill-color": "#1F2A2E",
+        "@fill-opacity": 0.6,
+        "@line-opacity": 0
+      }
+    }
+  ]
+}

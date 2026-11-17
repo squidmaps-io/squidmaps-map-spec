@@ -1,0 +1,76 @@
+{
+  "name": "Popup images",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.9585,
+      40.7738,
+      -73.9525,
+      40.7781
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "cafe",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9555,
+          40.7745
+        ]
+      },
+      "properties": {
+        "name": "Café on the corner",
+        "description": "A tiny corner spot with six stools and a window counter. Get the **cardamom bun**, and a cortado.\n\nOpen 7am to 4pm, every day.",
+        "@images": [
+          {
+            "id": "6f1d2c1e-3b0a-4c55-9a59-1c4c7d0b2a01",
+            "url": "https://squidmaps.io/examples/images/storefront",
+            "original": "https://squidmaps.io/examples/images/storefront/large.webp",
+            "width": 2560,
+            "height": 1920,
+            "bytes": 72608
+          },
+          {
+            "id": "6f1d2c1e-3b0a-4c55-9a59-1c4c7d0b2a02",
+            "url": "https://squidmaps.io/examples/images/coffee",
+            "original": "https://squidmaps.io/examples/images/coffee/large.webp",
+            "width": 2560,
+            "height": 1920,
+            "bytes": 61214
+          }
+        ],
+        "@popup": "card",
+        "@directions": true,
+        "@fill": "#D9664E",
+        "@radius": 11,
+        "@icon": "solid/mug-hot"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+name: Validate examples
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Check every example map against the schema
+        run: >-
+          npx --yes -p ajv-cli@5.0.0 -p ajv-formats@3.0.1
+          ajv validate --spec=draft2020 --strict=false -c ajv-formats
+          -s schema/map.schema.json -d "examples/**/*.json"

@@ -1,0 +1,136 @@
+{
+  "name": "Area label point",
+  "description": "",
+  "basemap": {
+    "type": "SQUIDMAPS",
+    "style": "light",
+    "opacity": 1,
+    "labelVisibility": true
+  },
+  "extent": {
+    "zoom": {
+      "mode": "range",
+      "min": 0,
+      "max": 20
+    },
+    "bounds": null,
+    "initialBounds": [
+      -73.96324,
+      40.77136,
+      -73.94816,
+      40.77784
+    ],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "panel": {
+    "visible": true,
+    "featureList": true,
+    "search": false
+  },
+  "controls": {
+    "zoom": true,
+    "fullscreen": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "area-label-point-1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9615,
+              40.7731
+            ],
+            [
+              -73.9563,
+              40.7731
+            ],
+            [
+              -73.9563,
+              40.7745
+            ],
+            [
+              -73.9601,
+              40.7745
+            ],
+            [
+              -73.9601,
+              40.7761
+            ],
+            [
+              -73.9615,
+              40.7761
+            ],
+            [
+              -73.9615,
+              40.7731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Automatic",
+        "@show-label": true,
+        "@line-color": "#2F8A4E",
+        "@fill-color": "#2F8A4E",
+        "@fill-opacity": 0.25,
+        "@label-color": "#1F5E35"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area-label-point-2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9551,
+              40.7731
+            ],
+            [
+              -73.9499,
+              40.7731
+            ],
+            [
+              -73.9499,
+              40.7745
+            ],
+            [
+              -73.9537,
+              40.7745
+            ],
+            [
+              -73.9537,
+              40.7761
+            ],
+            [
+              -73.9551,
+              40.7761
+            ],
+            [
+              -73.9551,
+              40.7731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Moved",
+        "@show-label": true,
+        "@line-color": "#2F8A4E",
+        "@fill-color": "#2F8A4E",
+        "@fill-opacity": 0.25,
+        "@label-color": "#1F5E35",
+        "@label-point": [
+          -73.9511,
+          40.7738
+        ]
+      }
+    }
+  ]
+}
