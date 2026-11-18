@@ -188,7 +188,7 @@ A marker pin's style.
 | `disc` | `Color` | Yes | The disc in the pin's head. |
 | `icon` | `Icon or null` | Yes | A Font Awesome icon on the disc. Without one, it's empty. |
 | `iconColor` | `Color or null` | Yes | The icon's color. Without one, white or dark ink, whichever contrasts the disc. |
-| `size` | `"small" \| "medium" \| "large"` | No | The pin's size: small (0.75 times medium), medium (34px wide) or large (1.4 times medium). |
+| `size` | `number \| "small" \| "medium" \| "large"` | No | The pin's width in pixels, 16 to 96; it's 1.14 times as tall. Or a preset: small, medium or large. |
 
 #### `type: "custom"`
 
@@ -199,7 +199,7 @@ A custom icon's style.
 | `type` | `"custom"` | Yes |  |
 | `icon` | `CustomIcon or null` | Yes | The picture, from the account's custom icons. Without one, a placeholder. |
 | `shape` | `"round" \| "original"` | Yes | round: cropped to a circle from its center, on the point, with a stroke. original: uncropped with any transparency, standing on the point with its bottom center there, like a pin. |
-| `size` | `"small" \| "medium" \| "large"` | Yes | Its size, matching a marker pin's: small, medium or large. |
+| `size` | `number \| "small" \| "medium" \| "large"` | Yes | Its size in pixels, 16 to 96: a round icon's diameter, inside its stroke, or the height of one drawn as is. Or a preset: small, medium or large. |
 | `stroke` | `Color` | Yes | The ring around a round icon. |
 | `strokeWidth` | `number` (0 to 10) | Yes | The ring's width in pixels, outside the picture. |
 

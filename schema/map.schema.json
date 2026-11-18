@@ -622,13 +622,23 @@
               "description": "The icon's color. Without one, white or dark ink, whichever contrasts the disc."
             },
             "size": {
-              "type": "string",
-              "enum": [
-                "small",
-                "medium",
-                "large"
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 16,
+                  "maximum": 96
+                },
+                {
+                  "description": "A preset: small (26px), medium (34px) or large (48px).",
+                  "type": "string",
+                  "enum": [
+                    "small",
+                    "medium",
+                    "large"
+                  ]
+                }
               ],
-              "description": "The pin's size: small (0.75 times medium), medium (34px wide) or large (1.4 times medium)."
+              "description": "The pin's width in pixels, 16 to 96; it's 1.14 times as tall. Or a preset: small, medium or large."
             }
           },
           "required": [
@@ -668,13 +678,23 @@
               "description": "round: cropped to a circle from its center, on the point, with a stroke. original: uncropped with any transparency, standing on the point with its bottom center there, like a pin."
             },
             "size": {
-              "type": "string",
-              "enum": [
-                "small",
-                "medium",
-                "large"
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 16,
+                  "maximum": 96
+                },
+                {
+                  "description": "A preset: small (26px), medium (34px) or large (48px).",
+                  "type": "string",
+                  "enum": [
+                    "small",
+                    "medium",
+                    "large"
+                  ]
+                }
               ],
-              "description": "Its size, matching a marker pin's: small, medium or large."
+              "description": "Its size in pixels, 16 to 96: a round icon's diameter, inside its stroke, or the height of one drawn as is. Or a preset: small, medium or large."
             },
             "stroke": {
               "description": "The ring around a round icon.",

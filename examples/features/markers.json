@@ -63,7 +63,7 @@
         "@marker-shell": "#C2473A",
         "@marker-disc": "#FFFFFF",
         "@marker-icon": "solid/utensils",
-        "@marker-size": "large"
+        "@marker-size": 48
       }
     },
     {

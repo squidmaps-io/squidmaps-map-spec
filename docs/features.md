@@ -309,7 +309,7 @@ type back restores it.
 | `@marker-disc` | `Color` | `"#0E9384"` | The disc in the pin's head. |
 | `@marker-icon` | `Icon` | None | A Font Awesome icon on the disc. Without one, it's empty. |
 | `@marker-icon-color` | `Color` | None | The icon's color. Without one, white or dark ink, whichever contrasts the disc. |
-| `@marker-size` | `"small" \| "medium" \| "large"` | `"medium"` | The pin's size: small (0.75 times medium), medium (34px wide) or large (1.4 times medium). |
+| `@marker-size` | `number \| "small" \| "medium" \| "large"` | `34` | The pin's width in pixels, 16 to 96; it's 1.14 times as tall. Or a preset: small, medium or large. |
 
 ```json
 [
@@ -336,7 +336,7 @@ type back restores it.
       "@marker-shell": "#C2473A",
       "@marker-disc": "#FFFFFF",
       "@marker-icon": "solid/utensils",
-      "@marker-size": "large"
+      "@marker-size": 48
     }
   },
   {
