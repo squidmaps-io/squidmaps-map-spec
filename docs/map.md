@@ -1,6 +1,6 @@
 # Map
 
-_Last updated November 16, 2026_
+_Last updated November 25, 2026_
 
 > A map is one JSON object, holding its own fields and its features.
 
@@ -12,13 +12,59 @@ _Last updated November 16, 2026_
 | --- | --- | --- | --- |
 | `name` | `string` (1 to 100 characters) | Yes | Shown at the top of the map's page and in link previews. Its page's address is made from it. |
 | `description` | `string` (at most 100000 characters) | Yes | Markdown, shown under the name in the panel over the published map. HTML is escaped. |
+| `kind` | `MapKind` | No | What the map is: "map", features over a basemap, or "image", one picture (its only feature, an image) on a background color, for showing a map made elsewhere. An image map has no basemap, and the editor and map lists treat it as a picture. Left out, it's "map". |
 | `basemap` | `Basemap or null` | Yes | The map under the features. Null shows none. |
+| `background` | `Color or null` | No | A color filling the map behind everything, seen where there's no basemap, like around an image map's picture. Null, or left out, leaves it blank. |
 | `extent` | `Extent` | Yes | Where the published map opens, and how far visitors can zoom and pan it. |
 | `view` | `View or null` | Yes | Where the published map opens, unless its extent has initialBounds. Null until the map is first viewed in the editor; it then fits the features. |
 | `legend` | `Legend or null` | Yes | A panel in the corner explaining the map's symbols. Null shows none. |
 | `panel` | `Panel` | No, `{"visible":true,"featureList":false,"search":false}` | The panel over the published map, with its name and description: whether it's shown, and whether it lists and searches the features. Left out, it's shown, without either. |
 | `controls` | `Controls` | No, `{"zoom":true,"fullscreen":false}` | Buttons over the published map, top right: zoom buttons and a fullscreen button. Left out, it has zoom buttons and no fullscreen button. |
 | `features` | `array of Feature` | Yes | The map's features, top of the list first. Points (and text) are drawn above lines, areas and images; within each, features earlier in the list are drawn on top. |
+
+## Image maps
+
+A map with `"kind": "image"` is an [image map](https://squidmaps.io/docs/image-maps): one
+picture to drag and zoom, rather than features over a basemap. It has no
+basemap, a `background` color around the picture, and one
+[image feature](https://squidmaps.io/docs/spec/features#feature-image). Its extent holds
+visitors to the picture: `bounds` and `initialBounds` are the picture's. This one is 1,600 × 1,000 pixels.
+
+```json
+{
+  "name": "Trail map",
+  "description": "Drawn for the 2026 race.",
+  "kind": "image",
+  "basemap": null,
+  "background": "#f4efe6",
+  "extent": {
+    "zoom": { "mode": "range", "min": 0, "max": 8 },
+    "bounds": [-20, -12.402005, 20, 12.402005],
+    "initialBounds": [-20, -12.402005, 20, 12.402005],
+    "scrollZoom": true
+  },
+  "view": null,
+  "legend": null,
+  "features": [
+    {
+      "type": "Feature",
+      "id": "picture",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-20, 12.402005], [20, 12.402005], [20, -12.402005], [-20, -12.402005], [-20, 12.402005]]]
+      },
+      "properties": {
+        "name": "Trail map",
+        "@feature-type": "image",
+        "@image": { "…": "an image uploaded in the editor" }
+      }
+    }
+  ]
+}
+```
+
+Pictures are uploaded in the editor, so image maps are made there rather
+than through the API or an AI assistant.
 
 ## Types
 

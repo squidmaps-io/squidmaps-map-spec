@@ -1353,17 +1353,23 @@ An image uploaded to squidmaps, kept as uploaded and scaled down.
 
 Kinds of values that appear in several places.
 
-### Bounds
+### MapKind
 
-An area as [west, south, east, north], in degrees. South is below north. West is below east, except across the antimeridian (180°), as in GeoJSON: [170, -20, -170, 10] is the area from 170°E to 170°W. Coordinates have at most six decimal places.
+What the map is: "map", features over a basemap, or "image", one picture (its only feature, an image) on a background color, for showing a map made elsewhere. An image map has no basemap, and the editor and map lists treat it as a picture. Left out, it's "map".
 
-`[number, number, number, number]`: items in turn: -180 to 180; -85.051129 to 85.051129; -180 to 180; -85.051129 to 85.051129
+`"map" | "image"`
 
 ### Color
 
 A color in hex, as "#rrggbb", like "#3F80C4".
 
 `string`: matches /^#[0-9a-fA-F]{6}$/
+
+### Bounds
+
+An area as [west, south, east, north], in degrees. South is below north. West is below east, except across the antimeridian (180°), as in GeoJSON: [170, -20, -170, 10] is the area from 170°E to 170°W. Coordinates have at most six decimal places.
+
+`[number, number, number, number]`: items in turn: -180 to 180; -85.051129 to 85.051129; -180 to 180; -85.051129 to 85.051129
 
 ### Icon
 

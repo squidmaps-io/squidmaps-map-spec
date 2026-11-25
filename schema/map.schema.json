@@ -15,6 +15,9 @@
       "maxLength": 100000,
       "description": "Markdown, shown under the name in the panel over the published map. HTML is escaped."
     },
+    "kind": {
+      "$ref": "#/$defs/MapKind"
+    },
     "basemap": {
       "anyOf": [
         {
@@ -25,6 +28,17 @@
         }
       ],
       "description": "The map under the features. Null shows none."
+    },
+    "background": {
+      "description": "A color filling the map behind everything, seen where there's no basemap, like around an image map's picture. Null, or left out, leaves it blank.",
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Color"
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "extent": {
       "$ref": "#/$defs/Extent"
@@ -88,6 +102,15 @@
   "additionalProperties": false,
   "description": "One map: its details, how it's viewed, and its features.",
   "$defs": {
+    "MapKind": {
+      "type": "string",
+      "enum": [
+        "map",
+        "image"
+      ],
+      "title": "MapKind",
+      "description": "What the map is: \"map\", features over a basemap, or \"image\", one picture (its only feature, an image) on a background color, for showing a map made elsewhere. An image map has no basemap, and the editor and map lists treat it as a picture. Left out, it's \"map\"."
+    },
     "Basemap": {
       "oneOf": [
         {
@@ -282,6 +305,12 @@
       ],
       "title": "Basemap",
       "description": "The map under the features, chosen by its type."
+    },
+    "Color": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$",
+      "title": "Color",
+      "description": "A color in hex, as \"#rrggbb\", like \"#3F80C4\"."
     },
     "Extent": {
       "type": "object",
@@ -841,12 +870,6 @@
       ],
       "title": "LegendSymbol",
       "description": "How a row's symbol is drawn: a copy of a feature's style, with the same fields as the feature properties for its kind. It stays as drawn when features change."
-    },
-    "Color": {
-      "type": "string",
-      "pattern": "^#[0-9a-fA-F]{6}$",
-      "title": "Color",
-      "description": "A color in hex, as \"#rrggbb\", like \"#3F80C4\"."
     },
     "Icon": {
       "type": "string",
